@@ -1,6 +1,6 @@
 <template>
     <div>
-        <router-link :to="{name: 'home'}">Logo</router-link>
+        <router-link to="/">Logo</router-link>
         <nav>
             <router-link tag="li" :to="{name: 'home'}"><a>Home</a></router-link>
             <router-link tag="li" :to="{name: 'about'}"><a>About</a></router-link>

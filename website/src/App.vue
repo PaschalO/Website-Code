@@ -2,6 +2,9 @@
     <div id="app">
         <navigation-bar></navigation-bar>
         <router-view></router-view>
+        <footer>
+            <p>{{footerInfo.copyright}} {{footerInfo.reservedRights}}</p>
+        </footer>
     </div>
 </template>
 
@@ -11,6 +14,15 @@
     export default {
         components: {
             'navigation-bar': navigation
+        },
+
+        data() {
+            return {
+                footerInfo: {
+                    copyright: '&copy 2019 Paschal Oduoza.',
+                    reservedRights: 'All rights Reserved.'
+                }
+            }
         }
     }
 </script>
