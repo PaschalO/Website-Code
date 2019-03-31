@@ -5,6 +5,7 @@ import About from './views/About.vue'
 import Contact from './views/Contact.vue'
 import Portfolio from './views/Portfolio.vue'
 import NProgress from 'nprogress'
+import Animate from 'animate.css'
 
 Vue.use(Router)
 

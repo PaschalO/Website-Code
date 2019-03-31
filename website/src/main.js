@@ -6,6 +6,7 @@ import upperFirst from 'lodash/upperFirst'
 import camelCase from 'lodash/camelCase'
 import 'nprogress/nprogress.css'
 import Vuelidate from 'vuelidate'
+import 'animate.css/animate.min.css'
 
 Vue.config.productionTip = false
 
