@@ -1,6 +1,6 @@
 <template>
     <div>
-        <input :value="value" @input="updateValue" v-bind="$attrs"/>
+        <input :value="value" @input="updateValue" v-bind="$attrs" v-on="listeners" />
     </div>
 </template>
 
@@ -11,6 +11,15 @@
 
         props: {
             value: [String, Number]
+        },
+
+        computed: {
+            listeners(){
+                return {
+                    ...this.$listeners,
+                    input: this.updateValue
+                }
+            }
         },
 
         methods: {

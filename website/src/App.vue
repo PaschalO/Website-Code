@@ -19,8 +19,8 @@
         data() {
             return {
                 footerInfo: {
-                    copyright: '&copy 2019 Paschal Oduoza.',
-                    reservedRights: 'All rights Reserved.'
+                    copyright: `&copy 2019 Paschal Oduoza.`,
+                    reservedRights: `All rights Reserved.`
                 }
             }
         }
